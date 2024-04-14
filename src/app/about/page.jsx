@@ -16,7 +16,7 @@ const about = () => {
         pride in what they do. Breeders that sell to puppy stores have more
         oversight and are more regulated than any other type of breeder, shelter
         or rescue. We believe in professional responsible breeding, not puppy
-        mills, therefore we personally check our breeder's inspection reports to
+        mills, therefore we personally check our breeders inspection reports to
         make sure the welfare of the puppies and parental dogs is not
         compromised in any way. When the puppies arrive to the store they are
         taken care of by a team of animal care specialists, vet techs, and a

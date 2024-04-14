@@ -63,7 +63,7 @@ const Availablepuppies = () => {
       </div>
       <div className="flex flex-wrap justify-center items-center gap-4 pb-9 ">
         {filteredData.map((item, index) => {
-          return <AvailablepuppiesBox item={item} />;
+          return <AvailablepuppiesBox item={item} key={index} />;
         })}
       </div>
     </div>
