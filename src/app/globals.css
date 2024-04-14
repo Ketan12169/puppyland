@@ -2,32 +2,228 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
+  position: relative;
+}
+
+.perfectpuppy {
+  text-shadow: 0 0 10px rgba(241, 238, 242, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.mainpage-1 {
   background: linear-gradient(
       to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgba(116, 116, 116, 0) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("https://w0.peakpx.com/wallpaper/653/862/HD-wallpaper-puppy-lovely-pupy-adorable-small-animal-cute-purple-flowers-dog.jpg");
+
+  background-size: cover;
+  opacity: 0.8;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.react-player {
+  position: absolute;
+  top: 0;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes button {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-animation {
+  animation: slideIn 1s ease-in-out;
+}
+.button-animation {
+  animation: button 1s ease-in-out;
+}
+.videoplayer {
+  background-color: white;
+}
+.page-2-big-para {
+  text-shadow: 0 0 10px rgba(255, 1, 251, 0.766);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #7d007d;
+}
+.puppybreed-box {
+  -webkit-box-shadow: -1px 1px 10px 2px rgba(219, 35, 219, 0.76);
+  -moz-box-shadow: -1px 1px 10px 2px rgba(219, 35, 219, 0.76);
+  box-shadow: -1px 1px 10px 2px #7d007d;
+}
+.availablepuppies-box {
+  -webkit-box-shadow: -1px 1px 5px 2px rgba(219, 35, 219, 0.76);
+  -moz-box-shadow: -1px 1px 5px 2px rgba(219, 35, 219, 0.76);
+  box-shadow: -1px 1px 5px 2px #7d007d;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 300px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c401c4;
+}
+
+@media screen and (min-width: 1317px) {
+  .puppy-img {
+    object-position: right;
+    opacity: 0.5;
+    object-fit: contain;
+  }
+}
+@media screen and (max-width: 864px) {
+  .avh {
+    flex-direction: column;
+    height: 230px;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 976px) {
+  .footer {
+    padding: 0 6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer {
+    padding: 0 1rem;
+  }
+}
+
+/* @media screen and (min-width: 840px) {
+  .second-page-div {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    flex-direction: column;
+  }
+} */
+@media screen and (max-width: 1076px) {
+  .plf {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .plfd {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1276px) {
+  .mainpage-5 {
+    padding: 0 9rem;
+  }
+}
+@media screen and (max-width: 896px) {
+  .mainpage-5 {
+    padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 732px) {
+  .mainpage-5 {
+    padding: 0 0rem;
+    flex-direction: column;
+  }
+}
+
+.hehe {
+  background-color: #7d007d;
+}
+.second-page-div {
+  background: rgb(61, 51, 51);
+}
+
+.nav-items {
+  position: relative;
+}
+
+.nav-items::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+
+  background-color: #ffffff;
+  border-radius: 30px;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+
+.nav-items.active::after,
+.nav-items:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+/* .mainpage-3 {
+  
+} */
+.mainpage-2 {
+  background: #def1f8;
+  /* background: -moz-radial-gradient(#ba78c6 #32003f); */
+}
+.Availablepuppies {
+  background-color: #ffffff;
+}
+
+.showPlayDateContainer1 {
+  overflow: auto;
+  max-height: 100vh;
+}
+.showPlayDateContainer {
+  overflow: auto;
+  max-height: 90vh;
+  color: black;
 }
