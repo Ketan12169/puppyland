@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .mainpage-1 {
   background: linear-gradient(
       to bottom,
@@ -118,6 +119,7 @@ body {
     margin-top: 20px;
   }
 }
+
 @media screen and (max-width: 976px) {
   .footer {
     padding: 0 6rem;
@@ -160,6 +162,7 @@ body {
     padding: 0 9rem;
   }
 }
+
 @media screen and (max-width: 896px) {
   .mainpage-5 {
     padding: 0 3rem;
@@ -169,6 +172,14 @@ body {
   .mainpage-5 {
     padding: 0 0rem;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 544px) {
+  .info-n-img {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -226,4 +237,5 @@ body {
   overflow: auto;
   max-height: 90vh;
   color: black;
+  min-width: 500px;
 }

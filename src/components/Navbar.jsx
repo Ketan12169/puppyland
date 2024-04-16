@@ -83,10 +83,18 @@ const Navbar = () => {
             className="min-[687px]:hidden border flex flex-col justify-center gap-3 p-3  items-center w-2/5 h-25  right-14 rounded-lg z-20 absolute   top-[4.5rem] bg-[#7D007D] text-white "
             id="menubox"
           >
-            <Link href="/available-puppies">AvailablePuppies</Link>
-            <Link href="/breeds">Breeds</Link>
-            <Link href="/about">About</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/available-puppies" onClick={showmenu}>
+              AvailablePuppies
+            </Link>
+            <Link href="/breeds" onClick={showmenu}>
+              Breeds
+            </Link>
+            <Link href="/about" onClick={showmenu}>
+              About
+            </Link>
+            <Link href="/contact" onClick={showmenu}>
+              Contact
+            </Link>
           </div>
         )}
       </div>

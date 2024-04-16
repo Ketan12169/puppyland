@@ -89,24 +89,24 @@ const AvailablepuppiesBox = ({ item }) => {
       </button>
       {showPlayDateContainer && (
         <div
-          className={`showPlayDateContainer1 z-[60] w-full  fixed inset-0 bg-gray-500 bg-opacity-50 ${
+          className={`showPlayDateContainer1 z-[60] w-full  fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center ${
             showBackdrop ? "block" : "hidden"
           } `}
         >
           <div
-            className={`showPlayDateContainer  absolute  left-[60vh] top-[2rem]  h-[100vh] bottom-[20rem]  justify-center w-2/5  bg-white mt-4 border border-black z-[70] p-20 py-10 transition-opacity ${
+            className={`showPlayDateContainer   h-[100vh] bottom-[20rem]  justify-center w-2/5  bg-white mt-4 border border-black z-[70] p-20 py-10 transition-opacity ${
               showBackdrop ? "opacity-100" : "opacity-0 pointer-events-none"
             }`}
           >
             <button
-              className="font-bold text-2xl absolute right-5 top-3"
+              className="font-bold text-2xl text-end w-full"
               onClick={hidePlayDateContainer}
             >
               X
             </button>
-            <div className="flex">
+            <div className="flex info-n-img">
               <Image src={item.img} width={200} height={200} alt="" />
-              <div className="flex flex-col w-3/5 justify-center items-start p-4 text-xl">
+              <div className="flex flex-col w-3/5 justify-center items-start p-4 text-xl max-[544px]:w-full">
                 <h1 className="font-bold">
                   Schedule a Play Date with This Pet!
                 </h1>
@@ -162,7 +162,7 @@ const AvailablepuppiesBox = ({ item }) => {
               Selected time:{selectTime}
             </h1>
             <h1 className="font-bold my-3 text-xl cursor-pointer">My Info</h1>
-            <form action={formsubmit()} className="flex flex-col gap-2 ">
+            <form className="flex flex-col gap-2 ">
               <div>
                 <label htmlFor="name">Name:</label>
                 <input
@@ -171,6 +171,7 @@ const AvailablepuppiesBox = ({ item }) => {
                   name="name"
                   className="border-2 border-black ml-3 rounded-md "
                   value={formData.name}
+                  required
                   onChange={handleChange}
                 />
               </div>
@@ -180,6 +181,7 @@ const AvailablepuppiesBox = ({ item }) => {
                   type="email"
                   id="email"
                   name="email"
+                  required
                   className="border-2 border-black ml-3 rounded-md "
                   value={formData.email}
                   onChange={handleChange}
@@ -191,6 +193,7 @@ const AvailablepuppiesBox = ({ item }) => {
                   type="tel"
                   id="phone"
                   name="phone"
+                  required
                   className="border-2 border-black ml-3 rounded-md "
                   value={formData.phone}
                   onChange={handleChange}
@@ -204,7 +207,7 @@ const AvailablepuppiesBox = ({ item }) => {
                     checked={formData.checkbox1}
                     onChange={handleChange}
                   />
-                  It's okay to text me.
+                  Its okay to text me.
                 </label>
               </div>
               <div>
@@ -215,7 +218,7 @@ const AvailablepuppiesBox = ({ item }) => {
                     checked={formData.checkbox2}
                     onChange={handleChange}
                   />
-                  It's okay to email me.
+                  Its okay to email me.
                 </label>
               </div>
               <div>
@@ -226,7 +229,7 @@ const AvailablepuppiesBox = ({ item }) => {
                     checked={formData.checkbox3}
                     onChange={handleChange}
                   />
-                  I'm aware that scheduling an appointment is not reserving this
+                  Im aware that scheduling an appointment is not reserving this
                   pet for me, and that the pet might get sold.
                 </label>
               </div>

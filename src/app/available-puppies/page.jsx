@@ -61,7 +61,7 @@ const Availablepuppies = () => {
           <option value="Female">Female</option>
         </select>
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-4 pb-9 ">
+      <div className="flex flex-wrap justify-center items-center gap-4 pb-9 min-h-[70.4vh]">
         {filteredData.map((item, index) => {
           return <AvailablepuppiesBox item={item} key={index} />;
         })}

@@ -70,25 +70,29 @@ const Mainpage = () => {
   // const uniqueBreeds = [...new Set(data.map((item) => item.breed))];
   return (
     <div>
-      <div className="mainpage-1 w-full h-[90vh] relative max-[380px]:h-[34rem] min-[380px]:h-[90.9vh]  max-[338px]:h-[39rem] ">
+      <div className="mainpage-1 w-full h-[90vh] relative  max-[700px]:h-[39rem] ">
         {/* Puppy image */}
 
-        <div className="absolute top-10 h-full  left-20 right-20 flex flex-col gap-8 text-[#ffffff] text-[4rem] font-bold min-[492px]:text-[2.4rem] min-[607px]:text-[2.5rem] min-[624px]:text-[3rem] ">
+        <div className="absolute top-10 h-full  left-20 right-20 flex flex-col gap-8  text-[#ffffff] text-[3rem]  font-bold   max-[700px]:text-[2rem]">
           <div className="flex flex-col gap-0">
             <span className="slide-in-animation">Welcome to</span>
-            <span className="slide-in-animation">Puppy Paradise</span>
+            <span className="slide-in-animation">PuppyLand</span>
           </div>
           <div className="flex flex-col gap-8 text-[#7D007D] ">
-            <span className=" slide-in-animation perfectpuppy  text-4xl min-[492px]:text-4xl min-[610px]:text-[4rem]">
+            <span className=" slide-in-animation perfectpuppy  text-[3rem]    max-[700px]:text-[2rem]">
               Find Your
             </span>
-            <span className="slide-in-animation perfectpuppy text-4xl min-[492px]:text-4xl min-[610px]:text-[4rem]">
+            <span className="slide-in-animation perfectpuppy text-[3rem]  max-[700px]:text-[2rem] leading-3">
               Perfect Puppy
             </span>
           </div>
           <div className="flex flex-col gap-0">
-            <span className="slide-in-animation text-[3rem]">Want to</span>
-            <span className="slide-in-animation">play with a puppy?</span>
+            <span className="slide-in-animation text-[3rem] max-[700px]:text-[2rem]">
+              Want to
+            </span>
+            <span className="slide-in-animation text-[3rem] max-[700px]:text-[2rem]">
+              play with a puppy?
+            </span>
           </div>
 
           <button
@@ -101,8 +105,8 @@ const Mainpage = () => {
           </button>
         </div>
       </div>
-      <div className="mainpage-2  w-full h-[30.5rem] relative bg-none  ">
-        <div className="absolute top-20 left-20 h-[21rem] right-20 flex justify-center items-center flex-col gap-6 text-white text-3xl font-bold  min-[735px]:flex-row bg-none">
+      <div className="mainpage-2  w-full h-[30.5rem] relative bg-none  py-10">
+        <div className="mt-10 top-20 left-20 h-[21rem] right-20 flex justify-center items-center flex-col gap-6 text-white text-3xl font-bold  min-[735px]:flex-row bg-none ">
           <VideoPlayer id="videoplayer" />
           <div className="w-4/5 max-w-screen-sm flex flex-col gap-3 justify-center items-center">
             <span className="text-[#7D007D] text-center min-[693px]:text-4xl  ">
@@ -114,7 +118,7 @@ const Mainpage = () => {
               the care and love that they receive while they are with the
               breeder, in our store and when they go home with their new family.
               Head on over to our store and check out all of the adorable
-              puppies! We're excited to meet you and answer all of your puppy
+              puppies! We are excited to meet you and answer all of your puppy
               questions!
             </span>
           </div>

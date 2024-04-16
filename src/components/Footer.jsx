@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between px-48 items-center bg-[#7D007D] text-white h-[3rem] footer">
+    <div className="flex justify-between px-48 items-center bg-[#7D007D] text-white h-[3rem] footer bottom-0">
       <Link href="">
         {" "}
         <h1>Pinogy Corporation & Puppyland © 2023</h1>
